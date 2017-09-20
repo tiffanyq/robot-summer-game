@@ -1,0 +1,485 @@
+@media (max-width: 859px) {
+	#container {
+	display: none;
+	}
+	#main-column {
+	display: none;
+	}
+	#side-column {
+	display: none;
+	}
+	#blocking-container {
+	display: block;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	}
+	
+	#electron-screen {
+	padding-top:130px;
+	display: block;
+	max-width: 200px;
+	margin:auto;
+	}
+	
+	#blocking-container p {
+	display: block;
+	max-width: 200px;
+	text-align: center;
+	font-family: 'Gill Sans', 'Helvetica', 'Arial', sans-serif;
+	font-size: 16px;
+	color: black;
+	margin: auto;
+	padding-top:20px;
+	padding-bottom:150px;
+	color: #2B3990;
+	}
+}
+@media (min-width: 860px) {
+
+#container {
+    margin: auto;
+    width: 860px;
+    padding: 10px;
+    display: block;
+    color: #2B3990;
+}
+
+#blocking-container {
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+display: none;
+}
+
+#blocking-container p {
+	max-width: 200px;
+	text-align: center;
+	font-family: 'Lato','Gill Sans', 'Helvetica', 'Arial', sans-serif;
+	font-size: 14px;
+	color: #2B3990;
+	margin: auto;
+}
+
+#main-column {
+float:left;
+padding-right: 30px;
+width:600px;
+}
+
+#side-column {
+float: right;
+padding-top: 10px;
+padding-bottom:10px;
+font-family: 'Lato','Gill Sans', 'Helvetica', 'Arial', sans-serif;
+font-size: 14px;
+color: #2B3990;
+}
+
+/* map element positioning */
+
+#map-background {
+position: absolute;
+}
+
+#map-TINAH, #map-oscilloscope, #map-infinitewell,
+#map-enph257, #map-enph270, #map-gearlogs, #map-iclicker,
+#map-math257, #map-mosfet, #map-onshape, #map-oscilloscope,
+#map-servo, #map-solderingiron {
+position: absolute;
+cursor: pointer;
+z-index: -4500 !important;
+}
+
+#label-TINAH, #label-oscilloscope, #label-infinitewell,
+#label-enph257, #label-enph270, #label-gearlogs, #label-iclicker,
+#label-math257, #label-mosfet, #label-onshape, #label-oscilloscope,
+#label-servo, #label-solderingiron {
+position: absolute;
+cursor: pointer;
+z-index: -4400 !important;
+}
+
+#label-TINAH-on, #label-oscilloscope-on, #label-infinitewell-on,
+#label-enph257-on, #label-enph270-on, #label-gearlogs-on, #label-iclicker-on,
+#label-math257-on, #label-mosfet-on, #label-onshape-on,
+#label-servo-on, #label-solderingiron-on {
+position: absolute;
+cursor: pointer;
+display: none;
+}
+
+#electron-TINAH, #electron-oscilloscope, #electron-infinitewell,
+#electron-enph257, #electron-enph270, #electron-gearlogs, #electron-iclicker,
+#electron-math257, #electron-mosfet, #electron-onshape, #electron-servo,
+#electron-solderingiron {
+position: absolute;
+z-index: 1 !important;
+display:none;
+}
+
+#map-background {
+z-index: -5000;
+max-width: 600px;
+}
+
+#map-TINAH {
+z-index = -4950;
+max-width: 200px;
+margin-top:370px;
+margin-left: 25px;
+}
+
+#label-TINAH, #label-TINAH-on {
+max-width:100px;
+margin-left: 190px;
+margin-top: 310px;
+}
+
+#electron-TINAH {
+max-width:60px;
+margin-left: 145px;
+margin-top: 355px;
+}
+
+#map-oscilloscope {
+max-width:180px;
+margin-left: 380px;
+margin-top:70px;
+}
+
+#label-oscilloscope, #label-oscilloscope-on {
+max-width:230px;
+margin-left: 345px;
+margin-top: 30px;
+}
+
+#electron-oscilloscope {
+max-width: 40px;
+margin-left: 400px;
+margin-top:108px;
+}
+
+#map-infinitewell {
+max-width: 140px;
+margin-left: 288px;
+margin-top: 345px;
+}
+
+#label-infinitewell, #label-infinitewell-on {
+max-width:80px;
+margin-left: 230px;
+margin-top: 395px;
+}
+
+#electron-infinitewell {
+max-width: 55px;
+margin-left: 300px;
+margin-top: 420px;
+}
+
+#map-enph257 {
+max-width: 50px;
+margin-top: 35px;
+margin-left:295px;
+}
+
+#label-enph257, #label-enph257-on {
+max-width:55px;
+margin-left: 240px;
+margin-top: 40px;
+}
+
+#electron-enph257 {
+max-width:40px;
+margin-left: 335px;
+margin-top: 90px;
+}
+
+#map-gearlogs {
+max-width: 70px;
+margin-top: 160px;
+margin-left:175px;
+}
+
+#label-gearlogs, #label-gearlogs-on {
+max-width:75px;
+margin-left: 140px;
+margin-top: 225px;
+}
+
+#electron-gearlogs {
+max-width:40px;
+margin-left:210px;
+margin-top: 180px;
+}
+
+#map-iclicker {
+max-width: 110px;
+margin-left: 295px;
+margin-top: 285px;
+}
+
+#label-iclicker, #label-iclicker-on {
+max-width:110px;
+margin-left: 310px;
+margin-top: 250px;
+}
+
+#electron-iclicker {
+max-width: 55px;
+margin-left: 315px;
+margin-top: 295px;
+}
+
+#map-math257 {
+max-width: 115px;
+margin-left: 30px;
+margin-top: 95px;
+cursor: pointer;
+}
+
+#label-math257, #label-math257-on {
+max-width:90px;
+margin-left: 70px;
+margin-top: 200px;
+}
+
+#electron-math257 {
+max-width: 55px;
+margin-left: 60px;
+margin-top:120px;
+}
+
+#map-enph270 {
+max-width:100px;
+margin-left: 440px;
+margin-top: 180px;
+}
+
+#label-enph270, #label-enph270-on {
+max-width:150px;
+margin-left: 430px;
+margin-top: 250px;
+}
+
+#electron-enph270 {
+max-width: 40px;
+margin-left: 470px;
+margin-top:205px;
+}
+
+#map-mosfet {
+max-width: 90px;
+margin-left: 440px;
+margin-top: 310px;
+}
+
+#label-mosfet, #label-mosfet-on {
+max-width:115px;
+margin-left: 465px;
+margin-top: 380px;
+}
+
+#electron-mosfet {
+max-width: 50px;
+margin-left: 495px;
+margin-top:297px;
+}
+
+#map-onshape {
+max-width: 65px;
+margin-left: 165px;
+margin-top: 50px;
+}
+
+#label-onshape, #label-onshape-on {
+max-width:110px;
+margin-left: 150px;
+margin-top: 120px;
+}
+
+#electron-onshape {
+max-width: 45px;
+margin-left: 175px;
+margin-top:75px;
+}
+
+#map-servo {
+max-width: 80px;
+margin-left: 315px;
+margin-top: 170px;
+}
+
+#label-servo, #label-servo-on {
+max-width:65px;
+margin-left: 255px;
+margin-top: 165px;
+}
+
+#electron-servo {
+max-width: 55px;
+margin-left: 312px;
+margin-top: 145px;
+}
+
+#map-solderingiron {
+max-width: 150px;
+margin-left: 410px;
+margin-top: 450px;
+}
+
+#label-solderingiron, #label-solderingiron-on {
+max-width:90px;
+margin-left: 435px;
+margin-top: 430px;
+}
+
+#electron-solderingiron {
+max-width: 55px;
+margin-left: 370px;
+margin-top:525px;
+}
+
+.map-group:hover .map-item {
+  -webkit-animation: rotateRight 0.75s steps(2, end) infinite; /* Safari 4+ */
+  -moz-animation:    rotateRight 0.75s steps(2, end) infinite; /* Fx 5+ */
+  -o-animation:      rotateRight 0.75s steps(2, end) infinite; /* Opera 12+ */
+  animation:         rotateRight 0.75s steps(2, end) infinite; /* IE 10+, Fx 29+ */
+}
+
+.map-group:hover .on-label {
+  -webkit-animation: rotateLeft 0.75s steps(2, end) infinite; /* Safari 4+ */
+  -moz-animation:    rotateLeft 0.75s steps(2, end) infinite; /* Fx 5+ */
+  -o-animation:      rotateLeft 0.75s steps(2, end) infinite; /* Opera 12+ */
+  animation:         rotateLeft 0.75s steps(2, end) infinite; /* IE 10+, Fx 29+ */
+}
+
+
+}
+/* game scenario styling */
+
+#game-start p {
+font-family: 'Lato','Gill Sans', 'Helvetica', 'Arial', sans-serif;
+font-size: 14px;
+text-align: center;
+margin: auto;
+padding-top:20px;
+max-width: 170px;
+color: #2B3990;
+}
+#start-icon {
+max-width: 200px;
+cursor: pointer;
+}
+#start-icon:hover {
+  -webkit-animation: rotateLeft 0.75s steps(2, end) infinite; /* Safari 4+ */
+  -moz-animation:    rotateLeft 0.75s steps(2, end) infinite; /* Fx 5+ */
+  -o-animation:      rotateLeft 0.75s steps(2, end) infinite; /* Opera 12+ */
+  animation:         rotateLeft 0.75s steps(2, end) infinite; /* IE 10+, Fx 29+ */
+}
+
+@keyframes rotateLeft {
+to {transform: rotate(-15deg);}
+}
+
+@keyframes rotateRight {
+to {transform: rotate(15deg);}
+}
+
+#game-play {
+display: none;
+}
+
+
+#q-image {
+max-width:200px;
+max-height: 160px;
+margin:auto;
+display: block;
+}
+
+#game-play p {
+font-family: 'Lato','Gill Sans', 'Helvetica', 'Arial', sans-serif;
+font-size: 14px;
+text-align: center;
+margin: auto;
+padding-top:20px;
+max-width: 170px;
+color: #2B3990;
+}
+
+#q-description {
+}
+/* emoji selection styling */
+.emoji-select-row {
+    display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background: #fff;
+    border: 1px solid #E8E8E8;
+    margin-right: 6px!important;
+    border-radius: 5px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    padding: 6px;
+    width: 200px;
+}
+
+.emoji-select-row:hover {
+border: 1px solid #49afff;
+cursor: pointer;
+}
+
+.emoji-text {
+font-family: 'Lato','Helvetica', 'Arial', sans-serif;
+color: #2B3990;
+font-size: 14px;
+vertical-align: top;
+}
+
+#footer {
+font-family: 'Lato', 'Gill Sans', 'Helvetica', 'Arial', sans-serif;
+color: #2B3990;
+font-size:9px;
+margin-top:3px;
+margin-left: 15px;
+opacity:0.5;
+}
+
+#game-end {
+display: none;
+font-family: 'Lato','Gill Sans', 'Helvetica', 'Arial', sans-serif;
+font-size: 14px;
+text-align: left;
+margin: auto;
+padding-top:20px;
+max-width:200px;
+color: #2B3990;
+}
+
+#restart-button {
+text-align: center;
+padding-top:10px;
+padding-bottom: 10px;
+border-radius: 5px;
+border: 1px solid #E8E8E8;
+width:200px;
+}
+
+#restart-button:hover {
+border: 1px solid #49afff;
+cursor: pointer;
+}
+
+#job-title {
+font-size: 30px;
+width: 200px;
+font-weight: bold;
+}
+} /* end of media */
+
