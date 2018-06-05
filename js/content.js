@@ -61,7 +61,7 @@ q7: "onshape",
 q8: "do you think the robot's not working right now because of the code or the wiring?",
 q9: "this first enph 270 quiz question requires a 7 by 7 matrix",
 q10: "i’m not sure if this servo can provide enough torque",
-q11: "5-minute presentations are tomorrow and i",
+q11: "5-minute presentations for enph 253 are tomorrow and i",
 q12: "the robot will zipline down successfully because",
 }; 
 const q_choices = {
@@ -209,3 +209,19 @@ elec_soft: "plugger-inner",
 mech_soft: "human TINAH",
 mech_elec_soft: "human 253 robot"
 };
+
+const backstory = {
+		iclicker: "8:30am classes (i.e. PHYS 250) with marks attached to clicker questions really get you going!",
+		solderingiron: "hope you used your fan, wore proper eye protection, and remembered to put on the heat shrink before soldering the header pins on! haha………….",
+		math257: "partial differential equations class (MATH 257) covered a whole lot of boundary conditions!",
+		mosfet: "sure is concerning when these burn up! how many did you smoke?", 
+		gearlogs: "the laser cutter being in the lab was a real game-changer. How much hardboard is too much hardboard?",
+		enph257: "we tried to estimate some key values of an aluminum rod in heat and thermodynamics class (ENPH 257). careful, artisanal heat modulation.",
+		onshape: "we received strong encouragement from a ENPH 253 TA to switch from solidworks to onshape for our CAD modelling",
+		TINAH: "before you start worrying, are you sure that you’ve a) plugged in the TINAH, and b) timed your pressing of the reset button correctly? finicky; we know! ",
+		enph270: "hope you liked first-year mechanics and paying for homework access!",
+		servo: "translating rotational motion to linear motion is apparently the way to go, if that’s the kind of motion you want. living the best servo life!",
+		oscilloscope: "there’s always some probing around the pcb or breadboard (or something else? who knows!) that you can do, no matter the lab at hand",
+		infinitewell: "imagine that you are a particle and that you are in a very deep well…some may call it…infinite? keep trying to tunnel through PHYS 250!"
+};
+

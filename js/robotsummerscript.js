@@ -3,6 +3,7 @@ tracking = {
 currentElectron: "",
 currentQuestion: 1,
 electronAnimationNum: 12,
+currentDetail: "",
 atGameEnd: false,
 mech_score: 0,
 elec_score: 0,
@@ -29,7 +30,18 @@ window.addEventListener("load", function(event) {
   	choice1.addEventListener('click', recordChoice, false);
   	choice2.addEventListener('click', recordChoice, false);
   	restartButton.addEventListener('click', restartGame, false); 	
-  });
+
+
+	window.addEventListener("click", function(e) {
+		var backstory = document.getElementById('backstory');
+		if (e.target != backstory && e.target != document.getElementById("backstory-text") && 
+			e.target.className != "map-item" && e.target.className != "on-label" && backstory.style.display == "block") {
+	        backstory.style.display = "none";
+	    }
+	});
+
+ });
+
 
 function hoverLabelChange(e) {
 	var item = e.target.parentNode;
@@ -58,7 +70,27 @@ function switchLabelOff(item) {
 
 /* shows more details behind the selected graphic */
 function showDetails(e) {
-	var electron = e.target.parentNode.querySelector(".map-electron");
+	var item = e.target.parentNode;
+	var textBox = document.getElementById("backstory");
+	var itemName = item.id.split("-")[0];
+	if (itemName == tracking.currentDetail && document.getElementById("backstory").style.display == "block") {
+		hideDetailsBox();
+	} else {
+	tracking.currentDetail = itemName;
+	var textToDisplay = backstory[itemName];
+	showDetailsBox(textToDisplay);
+	}
+}
+
+function hideDetailsBox() {
+	var box = document.getElementById("backstory");
+	box.style.display = "none";
+}
+
+function showDetailsBox(text) {
+	var box = document.getElementById("backstory-text");
+	box.innerText = text;
+	box.parentNode.style.display = "block";
 }
 
 /* starts game when "play" button is clicked */
@@ -188,7 +220,6 @@ function electronAnimationSequence() {
       	  var num = tracking.electronAnimationNum;
 	      var i = num%totalItems+1;
 	      var j = (num-1)%totalItems+1;
-	      console.log(j)
 	    
 	      var item = document.getElementById(q_images['q'+i]['id']);
 	      var prevItem = document.getElementById(q_images['q'+j]['id']);
