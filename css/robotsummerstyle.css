@@ -355,8 +355,6 @@ margin-top:525px;
   animation:         rotateLeft 0.75s steps(2, end) infinite; /* IE 10+, Fx 29+ */
 }
 
-
-}
 /* game scenario styling */
 
 #game-start p {
@@ -411,8 +409,8 @@ color: #2B3990;
 
 #q-description {
 }
-/* emoji selection styling */
-.emoji-select-row {
+/* selection styling */
+.select-row {
     display: inline-block;
     margin-top: 2px;
     margin-bottom: 2px;
